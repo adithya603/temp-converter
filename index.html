@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Temperature Converter</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <h2 class="title first-card">The Temperature Converter</h2>
+
+        <div class="container">
+
+            <form onsubmit="calTemp(); return false">
+                <h2 id="result"></h2>
+                <div class="takeTemp">
+                    <p>Temperature:
+                    </p>
+                    <input class="inputTemp second-card" type="number" name="temperature" id="temp">
+
+                </div>
+                <div class="fromTemp">
+                    <p class="fromTo">From&nbsp:</p>
+                    <select class="select third-card" id="tempType1">
+                        <option value="celsius">Celsius</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="fahrenheit">Fahrenheit</option>
+                    </select>
+                </div>
+
+                <div class="toTemp">
+                    <p class="fromTo">To&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:</p>
+                    <select class="select third-card" id="tempType2">
+                        <option value="fahrenheit">Fahrenheit</option>
+                        <option value="kelvin">Kelvin</option>
+                        <option value="celsius">Celsius</option>
+                    </select>
+                </div>
+
+                <input class="submitBtn" type="submit" value="Convert">
+            </form>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
